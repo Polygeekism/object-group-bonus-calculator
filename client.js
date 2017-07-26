@@ -9,7 +9,9 @@ var mayella = { name: "Mayella", employeeNumber: "89068", annualSalary: "35000",
 var employees = [ atticus, jem, boo, scout, robert, mayella ];
 
 // YOU SHOULD NOT NEED TO CHANGE ANYTHING ABOVE THIS POINT
-
+$("button").click(function(){
+    bonusLoop(employees);
+});
 function bonusCalculator(employee){
     var percentage;
     switch(employee.reviewRating) {
@@ -70,8 +72,8 @@ var bonusLoop = function(employeeArr) {
 };
 //console.log(employees);
 //console.log(bonusCalculator(jem));
-var result = bonusLoop(employees);
-result = JSON.stringify(result, null, 4);
+//var result = bonusLoop(employees);
+//result = JSON.stringify(result, null, 4);
 
 //$('h3').html(result);
 });
